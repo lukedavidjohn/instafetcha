@@ -55,6 +55,10 @@ class Instafetch {
       .catch(err => console.log(err));
   };
 
+  instructions = (req, res) => {
+    res.send({ message: "please post a LineHash and AuthorProfile" });
+  };
+
   methodNotAllowed = (req, res) => {
     res.send({ message: "method not allowed" });
   };
