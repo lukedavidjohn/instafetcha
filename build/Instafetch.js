@@ -5,11 +5,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var axios = require("axios");
-
-var _require = require("../credentials.json"),
-    client_id = _require.client_id,
-    client_secret = _require.client_secret,
-    refresh_token = _require.refresh_token;
+var _process$env = process.env,
+    client_id = _process$env.client_id,
+    client_secret = _process$env.client_secret,
+    refresh_token = _process$env.refresh_token;
 
 var Instafetch = function () {
   function Instafetch() {
