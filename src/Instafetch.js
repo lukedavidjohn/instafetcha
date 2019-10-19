@@ -1,9 +1,5 @@
 const axios = require("axios");
-const {
-  client_id,
-  client_secret,
-  refresh_token
-} = require("../credentials.json");
+const { client_id, client_secret, refresh_token } = process.env;
 
 class Instafetch {
   constructor() {

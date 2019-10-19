@@ -1,4 +1,4 @@
-// const { client_id, client_secret } = require("./credentials.json");
+// const { client_id, client_secret } = process.env;
 // const redirect_uri = "https://www.google.com";
 // const scope = "https://www.googleapis.com/auth/spreadsheets";
 
