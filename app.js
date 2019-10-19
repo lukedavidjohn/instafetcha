@@ -8,7 +8,8 @@ const instafetch = new Instafetch();
 
 apiRouter
   .route("/")
-  .options(cors({ methods: "POST" }))
+  .options(cors({ methods: ["GET", "OPTIONS", "POST"] }))
+  .get(cors(), instafetch.instructions)
   .post(cors(), instafetch.appendCall)
   .all(instafetch.methodNotAllowed);
 
